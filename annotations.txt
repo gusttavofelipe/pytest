@@ -1,0 +1,4 @@
+ARQUIVOS - prefixo OU sufixo "test_" para os nomes
+FUNÇÕES - prefixo "test_"
+
+EXECUÇÃO GERAL (CMD) - "python -m pytest"

@@ -1,9 +1,4 @@
-def sum_numbers(a, b):
-    return a + b
-
-
-def length(list_):
-    return len(list_)
+from functions import length, sum_numbers
 
 
 def test_sum_numbers_and_lenght():

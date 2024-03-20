@@ -1,4 +1,4 @@
-from tests.basics.functions import email_is_valid, divide
+from functions import email_is_valid, divide
 
 
 def test_email_is_valid():

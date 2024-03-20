@@ -1,5 +1,4 @@
-def is_positive(number):
-    return number > 0
+from functions import is_positive
 
 
 def test_is_positive():

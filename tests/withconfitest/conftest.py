@@ -1,5 +1,6 @@
 import pytest
 import requests
+import sqlalchemy
 from unittest.mock import MagicMock
 
 
@@ -14,3 +15,11 @@ def mock_response():
     mock.status_code = 200
     mock.json.return_value = {"message": "Success"}
     return mock
+
+
+@pytest.fixture
+def db_connection():
+    engine = sqlalchemy.create_engine("sqlite:///:memory:")
+    conn = engine.connect()
+    yield conn
+    conn.close()

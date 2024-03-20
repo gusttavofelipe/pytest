@@ -16,3 +16,7 @@ def length(list_):
 
 def sum_numbers(a, b):
     return a + b
+
+
+def double_and_sum(number_list) -> int:
+    return sum(x * 2 for x in number_list)

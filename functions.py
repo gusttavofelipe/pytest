@@ -20,3 +20,12 @@ def sum_numbers(a, b):
 
 def double_and_sum(number_list) -> int:
     return sum(x * 2 for x in number_list)
+
+
+def classify_age(age):
+    if age < 18:
+        return "teen"
+    elif age < 50:
+        return "adult"
+    else:
+        return "senior"

@@ -29,3 +29,7 @@ def classify_age(age):
         return "adult"
     else:
         return "senior"
+
+
+def calc_total_price(price, discount_percent, tax_percent) -> float:
+    return round(price * (1 - discount_percent / 100) * (1 + tax_percent / 100), 2)

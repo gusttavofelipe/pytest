@@ -1,3 +1,6 @@
+import random
+
+
 def email_is_valid(email):
     return "@" in email and "." in email
 
@@ -33,3 +36,18 @@ def classify_age(age):
 
 def calc_total_price(price, discount_percent, tax_percent) -> float:
     return round(price * (1 - discount_percent / 100) * (1 + tax_percent / 100), 2)
+
+
+def calc_fatorial(number: int):
+    if number == 0:
+        return 1
+    elif number < 0:
+        raise ValueError("Number must be positive")
+    return number * calc_fatorial(number - 1)
+
+
+def generate_random_number_list(positive=True) -> list[int]:
+    min_value = 0 if positive else -1001
+    max_value = 1001 if positive else 0
+
+    return [random.randint(min_value, max_value) for _ in range(random.randint(0, 100))]

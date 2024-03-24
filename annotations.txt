@@ -1,4 +1,8 @@
 ARQUIVOS - prefixo OU sufixo "test_" para os nomes
+ARQUIVO DE CONFIGURAÇÃO - pytest.ini
+
 FUNÇÕES - prefixo "test_"
 
 EXECUÇÃO GERAL (CMD) - "python -m pytest"
+EXECUÇÃO COM MARCADORES - python -m pytest -m + nome_do_marcador
+EXECUÇÃO IGNORANDO MARCADORES -  python -m pytest -m "not nome_do_marcador"

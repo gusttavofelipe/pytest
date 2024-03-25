@@ -1,20 +1,12 @@
 import random
 
 
-def email_is_valid(email):
-    return "@" in email and "." in email
-
-
 def divide(num1, num2):
     return num1 / num2 if num1 != 0 else None
 
 
 def multiply_numbers(a: int | float, b: int | float) -> float:
     return a * b
-
-
-def is_positive(number):
-    return number > 0
 
 
 def length(list_):

@@ -55,3 +55,14 @@ def generate_random_number_list(positive=True) -> list[int]:
     max_value = 1001 if positive else 0
 
     return [random.randint(min_value, max_value) for _ in range(random.randint(0, 100))]
+
+
+def access_index(index: int):
+    try:
+        list_ = [1, 2, 3]
+        return list_[index]
+
+    except IndexError:
+        raise IndexError("Index out of range")
+    except TypeError:
+        raise TypeError("Invalid input")

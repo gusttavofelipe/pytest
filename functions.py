@@ -1,8 +1,10 @@
 import random
 
 
-def divide(num1, num2):
-    return num1 / num2 if num1 != 0 else None
+def divide(num1: int | float, num2: int | float) -> float:
+    if num2 == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return num1 / num2
 
 
 def multiply_numbers(a: int | float, b: int | float) -> float:

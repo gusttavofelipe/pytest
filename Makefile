@@ -6,3 +6,6 @@ test-matching:
 
 test-dir:
 	python -m pytest ./tests/$(D) -vv
+
+test-cov:
+	python -m pytest ./tests --cov=functions ./tests/$(D)/$(F).py

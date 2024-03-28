@@ -1,3 +1,4 @@
+import asyncio
 import random
 from time import sleep
 
@@ -14,6 +15,11 @@ def multiply_numbers(a: int | float, b: int | float) -> float:
 
 def length(list_):
     return len(list_)
+
+
+def lazy_function():
+    sleep(2)
+    return "Done"
 
 
 def sum_numbers(a: int | float, b: int | float) -> float:
@@ -63,6 +69,6 @@ def access_index(index: int):
         raise TypeError("Invalid input")
 
 
-def lazy_function():
-    sleep(2)
-    return "Done"
+async def tech_data():
+    await asyncio.sleep(1)
+    return {"data": "something"}

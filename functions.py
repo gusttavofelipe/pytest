@@ -1,4 +1,5 @@
 import random
+from time import sleep
 
 
 def divide(num1: int | float, num2: int | float) -> float:
@@ -60,3 +61,8 @@ def access_index(index: int):
         raise IndexError("Index out of range")
     except TypeError:
         raise TypeError("Invalid input")
+
+
+def lazy_function():
+    sleep(2)
+    return "Done"
